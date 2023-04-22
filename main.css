@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #20c2eb, #d846e6);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+section {
+    background: linear-gradient(135deg, #20c2eb, #d846e6);
+    padding-bottom: 10px;
+}
+
+#continer {
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+@media (min-width:576px) {
+    #continer {
+        width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    #continer {
+        width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    #continer {
+        width: 980px;
+    }
+}
+
+@media (min-width:1200px) {
+    #continer {
+        width: 1190px;
+    }
+}
+
+@media (min-width:1500px) {
+    #continer {
+        width: 1470px;
+    }
+}
+
+@media (max-width:767px) {
+    #continer {
+        padding: 0 10px;
+    }
+}
+
+.header {
+    max-width: 100%;
+    background-color: #fdcdfd;
+    height: 50px;
+}
+
+.buttons {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #e9127d, #ffffff, #309be2);
+    width: 80px;
+    height: 100%;
+    margin: 3px;
+    color: rgb(41, 37, 31);
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.pad {
+    width: 85px;
+}
+
+.sp {
+    background: linear-gradient(135deg, #309be2, #d846e6);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #309be2, #d846e6);
+}
+
+.sp:hover {
+    background: linear-gradient(135deg, #e9127d, #ffffff, #309be2);
+}
+
+#flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 20px 60px 0 60px;
+}
+
+img {
+    width: 310px;
+    height: 200px;
+    transform: scale(1);
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+
+}
+
+@media (max-width:767px) {
+    #flex {
+        max-width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    img {
+        min-width: 100%;
+    }
+
+    button {
+        width: 60px;
+        font-size: 12px;
+    }
+}
